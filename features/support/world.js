@@ -1,8 +1,10 @@
-const {setWorldConstructor } = require('cucumber')
+const {setWorldConstructor, setDefaultTimeout} = require('cucumber')
 const { expect} = require('chai')
-const puppetter = require('puppeteer')
+const puppeteer = require('puppeteer')
 
 const HOME_PAGE = 'http://localhost:3000'
+
+setDefaultTimeout(60 * 1000);
 
 class RpsGame{
     constructor() {}
@@ -25,7 +27,6 @@ class RpsGame{
     }
 }
 
- 
 
 
 
