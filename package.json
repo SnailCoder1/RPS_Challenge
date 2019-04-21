@@ -1,0 +1,25 @@
+{
+  "name": "rps_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:SnailCoder1/RPS_Challenge.git",
+  "author": "boa <boa.matule@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "puppeteer": "^1.14.0",
+    "superstatic": "^6.0.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  },
+  "scripts": {
+    "build": "webpack --progress --p --mode=production",
+    "watch": "webpack --progress --watch --mode=development",
+    "cucumber": "superstatic -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
+  }
+}
