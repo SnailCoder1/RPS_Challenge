@@ -25,6 +25,8 @@ class RpsGame{
     
         expect(actualContent).to.be.eq(expectedContent)
     }
+
+    
 }
 
 
