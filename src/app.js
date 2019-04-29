@@ -1,1 +1,10 @@
-console.log("Hello Students!");
+document.addEventListener('DOMContentLoaded'), () => {
+
+    
+}
+
+
+
+
+
+//console.log("Hello Students!");

@@ -1,20 +1,62 @@
-const { Given, Then, When, After } = require('cucumber');
+const { Given, Then, When } = require('cucumber');
+
+Given('I visit the site', function () {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+Then('I should see {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+When('I click on {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+Then('I should see {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+Given('I visit the site', function () {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
 
+Then('I should see {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
-Given('I visit the site', async function() {
-    await this.openHomePage
-    })
+When('I click on {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
-When('I click on start button', function (){
+Then('I should see {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
-    });
-Then('I should choose between {string}, {string} ou {string}', function (string, string2, string3) {
-        return 'pending';
-    });
+Given('I visit the site', function () {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
-Then('I should be able to play', function () {
-    });
+Then('I should see {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
-The ('see the results', function () {
-    });     
+When('I ckick {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
+
+Then('I should see {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
