@@ -2,7 +2,10 @@
   "name": "rps_challenge",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:SnailCoder1/RPS_Challenge.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SnailCoder1/RPS_Challenge.git"
+  },
   "author": "boa <boa.matule@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -14,6 +17,7 @@
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",
+    "e2e_training_wheels": "0.0.36",
     "puppeteer": "^1.12.2",
     "superstatic": "^6.0.4",
     "tailwindcss": "^0.7.4",
@@ -21,8 +25,19 @@
     "webpack-cli": "^3.2.3"
   },
   "scripts": {
-    "build": "webpack --progress --p --mode=production; babel src -d lib",
-    "watch": "webpack --progress --watch --mode=development",
-    "cucumber": "superstatic -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
+    "test": "npm run features && npm run specs",
+    "features": "superstatic src -p 8080 & mocha --timeout 100000 --recursive  --reporter=spec features ; PORT=8080 npm run stop-test-server",
+    "specs": "mocha --recursive  --reporter=spec spec",
+    "server": "superstatic src -p 3000",
+    "stop-test-server": "lsof -ti tcp:$PORT | xargs kill"
+  },
+  "description": "Rock- Paper-Scissors Game! Rules:  Rock vs Paper -> Paper wins Rock vs Scissors -> Rock wins  Paper vs Scissor -> Scissor wins",
+  "bugs": {
+    "url": "https://github.com/SnailCoder1/RPS_Challenge/issues"
+  },
+  "homepage": "https://github.com/SnailCoder1/RPS_Challenge#readme",
+  "bin": {
+    "training-wheels:generate": "node ./node_modules/e2e_training_wheels/dist/generators.js",
+    "training-wheels:install": "node ./node_modules/e2e_training_wheels/dist/install.js"
   }
 }
