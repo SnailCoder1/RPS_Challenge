@@ -2,36 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Rock Paper Scissors Challenge</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">    
 </head>
 
 <body>
 
+    <script src="./dist/bundle.js"></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-  <script src="./dist/bundle.js"></script>
+    <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+        <div class="flex items-center flex-no-shrink text-white mr-6">
+            <span class="font-semibold text-xl tracking-tight">Rock Paper Scissors Challenge</span>
+        </div>
+    </nav>
 
-
-
-  <nav class="flex items-center justify-between flex-wrap bg-teal p-6" style="center">
-      <div class="flex items-center flex-no-shrink text-white mr-6">
-        <span class="font-semibold text-xl tracking-tight">RPS</span>
-      </div>
-  </nav>
-
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
-      <img class="w-full" src="boa.jpeg" alt="Sunset in the mountains">
-  </div>
     
 
-  <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded">
-      Button
-    </button>
-    
+    <div class="flex justify-around">
+            <img class="w-auto" src="src/img/Rock1.png" alt="Rock">
+            <img class="w-auto" src="src/img/Paper.png" alt="Paper">
+            <img class="w-auto" src="src/img/Scissors.png" alt="Scissors">
+    </div>
+
+<footer>  </footer>
+
+
+
+
+
 </body>
 
 </html>
+
