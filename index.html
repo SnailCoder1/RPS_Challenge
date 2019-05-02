@@ -6,33 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Paper Scissors Challenge</title>
+    <script src="./dist/bundle.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">    
 </head>
 
 <body>
 
-    <script src="./dist/bundle.js"></script>
 
-    <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
-        <div class="flex items-center flex-no-shrink text-white mr-6">
-            <span class="font-semibold text-xl tracking-tight">Rock Paper Scissors Challenge</span>
-        </div>
-    </nav>
 
     
 
-    <div class="flex justify-around">
-            <img class="w-auto" src="src/img/Rock1.png" alt="Rock">
-            <img class="w-auto" src="src/img/Paper.png" alt="Paper">
-            <img class="w-auto" src="src/img/Scissors.png" alt="Scissors">
+    <nav class="flex justify-around justify-between flex-wrap bg-teal p-10">
+        <div class="flex items-center flex-no-shrink text-white">
+            <span class="font-semibold text-xl tracking-tight">Rock Paper Scissors Challenge</span>
+        </div>
+    </nav>
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 25px;
+            width: 100%;
+        }
+    </style>
+
+
+
+    <div id=" "class="flex justify-around mr-6">
+
+            <input type="image" id="Rock" class="w-auto" src="src/img/Rock1.png" alt="Rock">
+            <input type="image" id="Paper" class="w-auto" src="src/img/Paper.png" alt="Paper">
+            <input type="image" id="Scissors" class="w-auto" src="src/img/Scissors.png" alt="Scissors">
     </div>
 
-<footer>  </footer>
+
+    <div class=""> </div>
+    <div id="result" class="results"></div>
 
 
 
 
 
+
+    <div class="footer flex justify-around">
+            <p>© The game is crafted in 100% JavaScript❤️.</p>
+    </div>
 </body>
 
 </html>
