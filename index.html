@@ -13,41 +13,46 @@
 
     <script src="./dist/bundle.js"></script>
 
-    
-
-    <nav class="flex justify-around justify-between flex-wrap bg-teal p-10">
-        <div class="flex items-center flex-no-shrink text-white">
-            <span class="font-semibold text-xl tracking-tight">Rock Paper Scissors Challenge</span>
-        </div>
-    </nav>
-
-
-    <style>
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 25px;
-            width: 100%;
-        }
-    </style>
-    <br><br>
-   
-        <p id="choice"> 
-
-        <div class="flex justify-around" > 
-            <button class="flex justify-around bg-white hover:bg-grey-lightest text-grey-darkest font-semibold border-grey-light rounded shadow">
-                Make your choice and play the game!
-            </button>
-        </div>
-    
-                            <br>  <br>  <br>  <br>  <br> 
-
-    <div class="flex justify-around mr-6 m-1px" >
-
-            <input onClick="Rock()" type="image" id="Rock" class="w-auto" src="src/img/Rock1.png" alt="Rock">
-            <input onClick="Scissors()" type="image" id="Scissors" class="w-auto" src="src/img/Scissors.png" alt="Scissors">
-            <input onClick="Paper()" type="image" id="Paper" class="w-auto" src="src/img/Paper.png" alt="Paper">
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
     </div>
+
+    <div class="result"> 
+        <p> The Game is for Kids</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="img/Rock1.png" alt="rock">
+        </div>
+
+        <div class="choice" id="p">
+            <img src="img/Paper.png" alt="paper">
+        </div>
+
+        <div class="choice" id="s">
+            <img src="img/Scissors.png" alt="scissors">
+        </div>
+    </div>
+
+    <p id="action-message">Make your move</p>
+
+
+
+
+
+
+
+
+   
+
+
+
+    
+
+
 
     <div class="footer flex justify-around">
             <p>© The game is crafted in JavaScript, HTML & CSS ❤️.</p>
