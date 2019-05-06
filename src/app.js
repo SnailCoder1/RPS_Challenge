@@ -1,9 +1,9 @@
 const RenderRPS = () => {
 		let div = document.querySelector()
-		div.innerHTML =`<p> </p>`
+	//	div.innerHTML =`<p> </p>`
 }
 
-const userScore = 0
+const userScore = 0;
 	const computerScore = 0
 	const userScore_span = document.getElementById("user-score")
 	const computerScore_span = document.getElementById("computer-score")
@@ -11,27 +11,27 @@ const userScore = 0
 	const result_div = document.querySelector(".result")
 	const rock_div = document.getElementById("r")
 	const paper_div = document.getElementById("p")
-	const scissors_div = document.getElementById("s")
+	const scissors_div = document.getElementById("s");
 
 	function getComputerChoice() {
-		const choices = ['r', 'p', 's'];
+		const choices = ["r", "p", "s"];
 		const randomNumber = Math.floor(Math.random() * 3);
 		return choices[randomNumber];
 	}
 
-	function game(userChoice){
+	function Rps(userChoice){
 		const computerChoice = getComputerChoice();
 		switch (userChoice + computerChoice) {
 		case "rs":
 		case "pr":
 		case "sp":
 			console.log("user wins");
-			break
+			break;
 		case "rp":
 		case "ps":
 		case "sr":
 			console.log("user loses")
-			break
+			break;
 		case "rr":
 		case "pp":
 		case "ss":
@@ -40,17 +40,17 @@ const userScore = 0
 	}
 	
 
-	function main() {
+	function Rps() {
 
-		rock_div.addEventListener('click', function() {
-			Game("r");
+		rock_div.addEventListener("click", function() {
+			Rps("r");
 		})
-	paper_div.addEventListener('click', function() {
-			Game("p");
+	paper_div.addEventListener("click", function() {
+		Rps("p");
 		})
-		scissor_div.addEventListener('click', function() {
-			Game("s");
-		})
+		scissor_div.addEventListener("click", function() {
+			Rps("s");
+		});
 
 	}
 

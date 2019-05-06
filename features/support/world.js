@@ -28,9 +28,9 @@ async pageHasTextContent(expectedContent) {
     }
 
 async clickOnBtn(btnName) {
-    const btnSelector = this.btnSelectorFromName(btnName.toLowerCase())
-    await this.page.waitForSelector(btnSelector)
-    await this.page.click(btnSelector)
+    const btnSelector = this.btnSelectorFromName(btnName.toLowerCase());
+    await this.page.waitForSelector(btnSelector);
+    await this.page.click(btnSelector);
 
 }
 }
@@ -40,4 +40,4 @@ async clickOnBtn(btnName) {
 
 
 
-setWorldConstructor(TheRps)
+setWorldConstructor(Rps)
