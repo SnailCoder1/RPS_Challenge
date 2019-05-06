@@ -1,4 +1,9 @@
-	const userScore = 0
+const RenderRPS = () => {
+		let div = document.querySelector()
+		div.innerHTML =`<p> </p>`
+}
+
+const userScore = 0
 	const computerScore = 0
 	const userScore_span = document.getElementById("user-score")
 	const computerScore_span = document.getElementById("computer-score")
@@ -35,19 +40,16 @@
 	}
 	
 
-	
-function main() {
+	function main() {
 
 		rock_div.addEventListener('click', function() {
 			Game("r");
 		})
-
-		paper_div.addEventListener('click', function() {
-			Gamep("p");
+	paper_div.addEventListener('click', function() {
+			Game("p");
 		})
-
 		scissor_div.addEventListener('click', function() {
-			Gam("s");
+			Game("s");
 		})
 
 	}
