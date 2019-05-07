@@ -7,10 +7,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Rock Paper Scissors Challenge</title>
         <link rel="stylesheet" href="src/css/style.css">
-        
-
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     </head>
-
+    
         <body>
 
             <header> 
@@ -19,7 +18,7 @@
 
                 <div class="score-board">
                     <div id="user-label" class="badge">user</div>
-                    <div id="computer-label" class="badge">comp</div>
+                    <div id="computer-label" class="badge">computer</div>
                     <span id="user-score">0</span>:<span id="computer-score">0</span>
                 </div>
 
@@ -36,14 +35,15 @@
                             <img src="src/image/Paper.png" alt="paper">
                         </div>
 
-                            <div class="choice" id="s">
-                        <img src="src/image/Scissors.png" alt="scissors">
+                        <div class="choice" id="s">
+                            <img src="src/image/Scissors.png" alt="scissors">
+                        </div>
                     </div>
-                </div>
 
                 <p id="action-message">Make your move.</p>
             
             <script> src="./src/rps.js"</script>
         </body>
 </html>
+
 

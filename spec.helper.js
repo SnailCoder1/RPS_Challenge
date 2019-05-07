@@ -5,4 +5,4 @@ global.expect = chai.expect;
 
 const fs = require('fs');
 let rps = fs.readFileSync('./src/rps.js');
-eval( rps + `\nexports.Rps = Rps;`)
+eval( rps + `\nexports.Rps = rps;`)
