@@ -4,5 +4,5 @@ global.browser = new BrowserHelpers()
 global.expect = chai.expect;
 
 const fs = require('fs');
-let rps = fs.readFileSync('./src/rps.js');
+let rps = fs.readFileSync('./src/app.js');
 eval( rps + `\nexports.Rps = rps;`)
