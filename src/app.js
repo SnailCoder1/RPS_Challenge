@@ -14,9 +14,9 @@ function getComputerChoice() {
   return choices[randomNumber];
 }
 
-function convertToWorld(letter) {
-  if (letter === "r") return "Rock"
-  if (letter === "p") return "Papper"
+function convertToWord(letter) {
+  if (letter === "r") return "Rock";
+  if (letter === "p") return "Papper";
   return "Scissors";
 }
 
@@ -26,7 +26,7 @@ function win(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sub();
   const smallCompWord = "comp".fontsize(3).sub();
-  results_p.innerHTML = ` ${convertToWord(userChoice)}${smallUserWord} beats  ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
+  result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats  ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
 }
 
 function lose(userChoice, computerChoice) {
@@ -35,17 +35,16 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sub();
   const smallCompWord = "comp".fontsize(3).sub();
-  results_p.innerHTML = ` ${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost!`;
+  result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost!`;
 }
 
 function draw(userChoice, computerChoice) {
-  computerScore_span.innerHTML = computerScore;
   const smallUserWord = "user".fontsize(3).sub();
   const smallCompWord = "comp".fontsize(3).sub();
-  results_p.innerHTML = ` ${convertToWord(userChoice)}${smallUserWord} equals  ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
+  result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
 }
 
-function Rps(userChoice){
+function rps(userChoice){
   const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
     case "rs":
@@ -67,9 +66,9 @@ function Rps(userChoice){
 }
 
 function main() {
-    rock_div.addEventListener("click", () => Rps("r"));
-    paper_div.addEventListener("click", () => Rps("p"));
-    scissors_div.addEventListener("click", () => Rps("s"));
+    rock_div.addEventListener("click", () => rps("r"));
+    paper_div.addEventListener("click", () => rps("p"));
+    scissors_div.addEventListener("click", () => rps("s"));
 }
 
 main();
