@@ -66,10 +66,10 @@ function Rps(userChoice){
     }
 }
 
-function Rps() {
+function main() {
     rock_div.addEventListener("click", () => Rps("r"));
     paper_div.addEventListener("click", () => Rps("p"));
     scissors_div.addEventListener("click", () => Rps("s"));
 }
 
-Rps();
+main();

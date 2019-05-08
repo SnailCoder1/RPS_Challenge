@@ -79,7 +79,7 @@ font-family: Asap, sans-serif
 }
 
 .choice:hover {
-  background: pink;
+  background: red;
   cursor: pointer;
 }
 
