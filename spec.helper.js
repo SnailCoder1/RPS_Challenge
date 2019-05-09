@@ -6,4 +6,4 @@ global.expect = chai.expect;
 const fs = require ('fs');
 let = fs.readFileSync('/src/app.js')
 
-eval(cal + `\nexports. = `)
+eval(cal + `\nexports. = `) 

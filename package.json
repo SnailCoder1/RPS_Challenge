@@ -1,7 +1,7 @@
 {
   "name": "rps_challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rock- Paper-Scissors Game! Rules:  Rock vs Paper -> Paper wins Rock vs Scissors -> Rock wins  Paper vs Scissor -> Scissor wins",
   "main": "index.js",
   "scripts": {
     "test": "npm run features && npm run specs",
@@ -26,5 +26,6 @@
   "bin": {
     "training-wheels:generate": "node ./node_modules/e2e_training_wheels/dist/generators.js",
     "training-wheels:install": "node ./node_modules/e2e_training_wheels/dist/install.js"
-  }
+  },
+  "dependencies": {}
 }
