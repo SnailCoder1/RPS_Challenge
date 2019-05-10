@@ -27,5 +27,7 @@
     "training-wheels:generate": "node ./node_modules/e2e_training_wheels/dist/generators.js",
     "training-wheels:install": "node ./node_modules/e2e_training_wheels/dist/install.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "assertion-error": "^1.1.0"
+  }
 }
